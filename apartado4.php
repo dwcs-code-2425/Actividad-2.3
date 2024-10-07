@@ -2,7 +2,7 @@
 echo "Introduzca un número entero\n";
 fscanf(STDIN, "%d", $n);
 echo "Se ha leído $n\n";
-//Vamos a obviar por ahora la validación de la entrada
+//Imos  obviar por agora a validación da entrada
 ?>
 
 <!DOCTYPE html>
@@ -28,12 +28,12 @@ for ($i=0; $i <=TOPE_MAX ; $i++) {
    $clave = $n.'x'.$i;
    $tabla[$clave] = $n * $i;
 
-   //Otra opción:
+   //Outra opción:
    //$tabla["$n x $i"]=$n*$i;
 
-   //Otra opción con sintaxis compleja: 
+   //Outra opción con sintaxis complexa: 
    //https://www.php.net/manual/en/language.types.string.php#language.types.string.parsing.complex
-   //Permite evaluar una variable dentro de una cadena de texto cuando su delimitación podría dar lugar a confusión (entre otras cosas)
+   //Permite evaluar unha variable dentro dunha cadea de texto cando a súa delimitación podería dar lugar a confusión (entre outras cosas)
    //$tabla["{$n}x{$i}"]=$n*$i;
 }
 echo "<pre>";
